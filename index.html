@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#0b0d15" name="theme-color"/>
+  <meta content="NOIR VIOLET: moda urbana para hombres y mujeres." name="description"/>
+  <title>
+   NOIR VIOLET |Tienda de moda
+  </title>
+  <link href="css/tienda.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- AVISO SUPERIOR: promociones y mensajes importantes -->
+<div class="announcement">
+   ✦ NUEVA COLECCI&Oacute;N 2026
+   <span>
+    &middot;
+   </span>
+   ENV&Iacute;OS A TODO CHILE
+   <span>
+    &middot;
+   </span>
+   MODA SIN L&Iacute;MITES ✦
+  </div>
+  <!-- ENCABEZADO PRINCIPAL: logo, buscador, carrito y presentación de la marca -->
+<header class="hero">
+   <div class="hero-top">
+    <a class="brand-mini" href="#inicio">
+     NV
+     <span>
+      &reg;
+     </span>
+    </a>
+    <div class="hero-actions">
+     <button aria-label="Ir al buscador" class="icon-btn" id="searchToggle">
+      &telrec;
+     </button>
+     <button aria-label="Abrir carrito" class="cart-button" id="cartToggle">
+      🛍
+      <span>
+       MI CARRITO
+      </span>
+      <b id="cartCount">
+       0
+      </b>
+     </button>
+    </div>
+   </div>
+   <div class="hero-center">
+    <div class="hero-kicker">
+     EST. 2026 &middot; STREETWEAR &amp; ESSENTIALS
+    </div>
+    <div class="hero-logo">
+     NOIR
+     <span>
+      ✦
+     </span>
+     VIOLET
+    </div>
+    <p>
+     Tu estilo. Tus reglas.
+    </p>
+    <a class="primary-btn" href="#catalogo">
+     EXPLORAR COLECCI&Oacute;N
+     <span>
+      &nearrow;
+     </span>
+    </a>
+   </div>
+   <div class="hero-foot">
+    <span>
+     ✦ DISE&Ntilde;ADO PARA DESTACAR
+    </span>
+    <span>
+     HOMBRE / MUJER / UNISEX
+    </span>
+    <span>
+     DROP 001 &mdash; 2026
+    </span>
+   </div>
+  </header>
+  <div class="shell">
+   <nav aria-label="Categor&iacute;as" class="nav">
+    <a class="nav-home" href="#inicio">
+     ✦ INICIO
+    </a>
+    <div class="dropdown">
+     <button aria-expanded="false" class="nav-drop">
+      ◈ CALZADO
+      <span>
+       ⌄
+      </span>
+     </button>
+     <div class="dropdown-menu">
+      <button data-category="Calzado">
+       Ver todo el calzado
+      </button>
+      <button data-category="Calzado" data-gender="Hombre">
+       Calzado hombre
+      </button>
+      <button data-category="Calzado" data-gender="Mujer">
+       Calzado mujer
+      </button>
+     </div>
+    </div>
+    <button class="nav-link" data-category="Pantalones">
+     ▤ PANTALONES
+    </button>
+    <div class="dropdown">
+     <button aria-expanded="false" class="nav-drop">
+      ♧ PARTE SUPERIOR
+      <span>
+       ⌄
+      </span>
+     </button>
+     <div class="dropdown-menu">
+      <button data-category="Camisas">
+       Camisas
+      </button>
+      <button data-category="Poleras">
+       Poleras y polerones
+      </button>
+      <button data-category="Chaquetas">
+       Chaquetas y abrigos
+      </button>
+     </div>
+    </div>
+    <button class="nav-link" data-category="Accesorios">
+     ◇ ACCESORIOS
+    </button>
+    <button class="nav-link" data-category="Todos">
+     ✧ VER TODO
+    </button>
+   </nav>
+   <!-- CONTENIDO PRINCIPAL: barra lateral y zona de productos -->
+<div class="layout" id="inicio">
+    <!-- BARRA LATERAL: filtros, colecciones y contacto -->
+<aside class="sidebar">
+     <section class="panel">
+      <h3>
+       ✦ EXPLORA LA TIENDA
+      </h3>
+      <p>
+       Encuentra tu pr&oacute;ximo look.
+      </p>
+      <div class="side-links">
+       <button data-category="Todos">
+        Todas las prendas
+        <span>
+         &nearrow;
+        </span>
+       </button>
+       <button data-gender="Mujer">
+        Moda mujer
+        <span>
+         &nearrow;
+        </span>
+       </button>
+       <button data-gender="Hombre">
+        Moda hombre
+        <span>
+         &nearrow;
+        </span>
+       </button>
+       <button data-gender="Unisex">
+        Unisex
+        <span>
+         &nearrow;
+        </span>
+       </button>
+      </div>
+     </section>
+     <section class="panel">
+      <h3>
+       ◈ FILTRA TU ESTILO
+      </h3>
+      <label for="genderFilter">
+       Colecci&oacute;n
+      </label>
+      <select id="genderFilter">
+       <option value="Todos">
+        Todas
+       </option>
+       <option>
+        Hombre
+       </option>
+       <option>
+        Mujer
+       </option>
+       <option>
+        Unisex
+       </option>
+      </select>
+      <label for="categoryFilter">
+       Categor&iacute;a
+      </label>
+      <select id="categoryFilter">
+       <option value="Todos">
+        Todas
+       </option>
+       <option>
+        Calzado
+       </option>
+       <option>
+        Pantalones
+       </option>
+       <option>
+        Camisas
+       </option>
+       <option>
+        Poleras
+       </option>
+       <option>
+        Chaquetas
+       </option>
+       <option>
+        Accesorios
+       </option>
+      </select>
+      <label for="sortFilter">
+       Ordenar
+      </label>
+      <select id="sortFilter">
+       <option value="featured">
+        Destacados
+       </option>
+       <option value="asc">
+        Menor precio
+       </option>
+       <option value="desc">
+        Mayor precio
+       </option>
+       <option value="az">
+        Nombre A&ndash;Z
+       </option>
+      </select>
+      <button class="reset" id="resetFilters">
+       Limpiar filtros &orarr;
+      </button>
+     </section>
+     <section class="panel side-promo">
+      <div class="promo-eyebrow">
+       DROP 001
+      </div>
+      <strong>
+       THE NEW
+       <br/>
+       UNIFORM.
+      </strong>
+      <p>
+       Prendas esenciales para crear tu propio estilo.
+      </p>
+      <a href="#catalogo">
+       DESCUBRIR &nearrow;
+      </a>
+     </section>
+     <section class="panel">
+      <h3>
+       ✉ CONTACTO
+      </h3>
+      <p>
+       &iquest;Dudas sobre tallas o pedidos?
+      </p>
+      <a href="mailto:contacto@ejemplo.com">
+       Escr&iacute;benos por correo &nearrow;
+      </a>
+      <small>
+       Correo provisional, reemplazar antes de publicar.
+      </small>
+     </section>
+    </aside>
+    <!-- CONTENIDO DE LA TIENDA -->
+<main class="content">
+     <!-- PRODUCTOS DESTACADOS: se cargan desde products.js -->
+<section class="featured panel">
+      <div class="section-heading">
+       <div>
+        <div class="eyebrow">
+         SELECCI&Oacute;N NOIR VIOLET
+        </div>
+        <h2>
+         LOS M&Aacute;S DESEADOS
+         <span>
+          ✦
+         </span>
+        </h2>
+       </div>
+       <span class="heading-detail">
+        01 / FAVORITOS
+       </span>
+      </div>
+      <div class="featured-grid" id="featuredGrid">
+      </div>
+     </section>
+     <!-- PRESENTACIÓN DE LA MARCA -->
+<section class="intro panel">
+      <div>
+       <div class="eyebrow">
+        BIENVENIDO A TU NUEVA TIENDA
+       </div>
+       <h1>
+        VISTE DIFERENTE.
+        <br/>
+        <em>
+         SIENTE EL CAMBIO.
+        </em>
+       </h1>
+       <p>
+        Una selecci&oacute;n de moda urbana, b&aacute;sicos esenciales y piezas con personalidad. Para quienes no siguen tendencias: las reinventan.
+       </p>
+       <a class="outline-btn" href="#catalogo">
+        VER TODOS LOS PRODUCTOS &nearrow;
+       </a>
+      </div>
+      <div class="intro-art">
+       <span>
+        NV
+       </span>
+       <div>
+        WEAR YOUR
+        <br/>
+        OWN STORY.
+       </div>
+      </div>
+     </section>
+     <!-- CATÁLOGO: filtros, buscador y listado de productos -->
+<section class="catalog panel" id="catalogo">
+      <div class="section-heading">
+       <div>
+        <div class="eyebrow">
+         ENCUENTRA TU PR&Oacute;XIMO FAVORITO
+        </div>
+        <h2>
+         CAT&Aacute;LOGO
+         <span>
+          ✦
+         </span>
+        </h2>
+       </div>
+       <span class="heading-detail" id="resultsCount">
+       </span>
+      </div>
+      <div class="catalog-toolbar">
+       <div class="chips" id="chips">
+        <button class="chip active" data-category="Todos">
+         Todo
+        </button>
+        <button class="chip" data-category="Calzado">
+         Calzado
+        </button>
+        <button class="chip" data-category="Pantalones">
+         Pantalones
+        </button>
+        <button class="chip" data-category="Camisas">
+         Camisas
+        </button>
+        <button class="chip" data-category="Poleras">
+         Poleras
+        </button>
+        <button class="chip" data-category="Chaquetas">
+         Chaquetas
+        </button>
+        <button class="chip" data-category="Accesorios">
+         Accesorios
+        </button>
+       </div>
+       <input aria-label="Buscar productos" id="searchInput" placeholder="&telrec; Buscar prendas..." type="search"/>
+      </div>
+      <div class="products" id="productGrid">
+      </div>
+      <p class="empty" hidden="" id="emptyMessage">
+       No encontramos productos con esos filtros. Prueba otra b&uacute;squeda.
+      </p>
+     </section>
+     <section class="benefits">
+      <div>
+       ✧
+       <strong>
+        ENV&Iacute;OS A TODO CHILE
+       </strong>
+       <small>
+        Configura tus tarifas al publicar
+       </small>
+      </div>
+      <div>
+       ◈
+       <strong>
+        COMPRA CON ESTILO
+       </strong>
+       <small>
+        Cat&aacute;logo para todos los d&iacute;as
+       </small>
+      </div>
+      <div>
+       ♡
+       <strong>
+        ATENCI&Oacute;N CERCANA
+       </strong>
+       <small>
+        Estamos para ayudarte
+       </small>
+      </div>
+     </section>
+    </main>
+   </div>
+  </div>
+  <!-- PIE DE PÁGINA: información final de la tienda -->
+<footer>
+   <div class="footer-brand">
+    NOIR
+    <span>
+     ✦
+    </span>
+    VIOLET
+   </div>
+   <p>
+    Moda que habla por ti. Tienda de demostraci&oacute;n &mdash; productos y precios referenciales.
+   </p>
+   <small>
+    &copy; 2026 NOIR VIOLET &middot; Dise&ntilde;o basado en Start Bootstrap Shop Homepage
+   </small>
+  </footer>
+  <!-- CARRITO LATERAL: se abre al presionar Mi carrito -->
+<div class="scrim" hidden="" id="scrim">
+  </div>
+  <aside aria-hidden="true" aria-label="Carrito de compras" class="cart-drawer" id="cartDrawer">
+   <div class="drawer-header">
+    <div>
+     <small>
+      MI SELECCI&Oacute;N
+     </small>
+     <h2>
+      TU CARRITO ✦
+     </h2>
+    </div>
+    <button aria-label="Cerrar carrito" id="cartClose">
+     &times;
+    </button>
+   </div>
+   <div class="cart-items" id="cartItems">
+   </div>
+   <div class="cart-bottom">
+    <div class="total">
+     <span>
+      Subtotal
+     </span>
+     <strong id="cartTotal">
+      $0
+     </strong>
+    </div>
+    <p>
+     Env&iacute;o calculado al confirmar el pedido.
+    </p>
+    <button class="primary-btn checkout" id="checkoutBtn">
+     FINALIZAR PEDIDO &nearrow;
+    </button>
+    <small>
+     Demostraci&oacute;n: no se procesan pagos reales.
+    </small>
+   </div>
+  </aside>
+  <div aria-live="polite" id="toast" role="status">
+  </div>
+  <!-- ARCHIVOS JAVASCRIPT: primero los productos y luego las funciones de la tienda -->
+<script src="js/products.js">
+  </script>
+  <script src="js/tienda.js">
+  </script>
+ </body>
+</html>
